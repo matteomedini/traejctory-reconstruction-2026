@@ -61,10 +61,12 @@ pip install -r requirements.txt
 Open run_analysis.py and configure these values:
 
 REF_FILE = "data/ref.csv"
+
 ME_FILE = "data/me.csv"
 
 TRACK_NAME = "Your Track Name"
-TRACK_LENGTH_M = ..
+
+TRACK_LENGTH_M = track length (m)
 
 TURNS = [ .. ]
 
