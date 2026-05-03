@@ -2,14 +2,14 @@
 
 This project reconstructs racing lines from iRacing telemetry and compares a target lap against a reference lap on a corner-by-corner basis.
 
-The core idea is simple: iRacing does not provide a directly usable GPS racing line in the telemetry stream, so this project rebuilds the trajectory from physical telemetry channels and then compares that reconstructed line against GPS-derived trajectories for validation and visual inspection.
+iRacing does not provide a directly usable GPS racing line in the telemetry stream, so this project rebuilds the trajectory from physical telemetry channels and then compares that reconstructed line against GPS-derived trajectories for validation and visual inspection.
 
 The output is:
-- corner-by-corner advice labels for `entry`, `apex`, and `exit`
+ advice labels at every curve for `entry`, `apex`, and `exit`
 - physical trajectory plots
 - GPS vs physical comparison plots for each corner
 
-## Why This Project 
+## Why This Project is useful 
 
 In iRacing, telemetry is available in real time, but native position data is not exposed in a way that directly gives a clean racing line for driver comparison.
 
@@ -25,7 +25,7 @@ This project solves that by:
 
 This makes it possible to perform racing line analysis and driver coaching even when GPS is not part of the simulator telemetry workflow.
 
-## What Each File Does
+## Files
 - curveloop.py
 
 contains the core reconstruction and corner advice logic
